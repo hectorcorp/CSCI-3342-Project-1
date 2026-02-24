@@ -1,0 +1,144 @@
+body{
+    background-color: #dfedff;
+    margin: 0px;
+}
+
+.nav {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+}
+
+.nav img {
+    height: 60px;
+    margin-right: 10px
+}
+
+.nav h1 {
+    color: rgb(29, 155, 240);
+    font-size: 40px;
+}
+
+.tweetbody {
+    background-color: white;
+    width: 600px;
+    height: 450px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.tweetbody hr {
+    border-width: 2px;
+    opacity: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.tweetInput {
+    height: 150px;
+    display: flex;
+}
+
+.profilePic img{
+    width: 50px;
+    height: auto;
+}
+
+.tweetInput span {
+    width: 100%;
+}
+
+textarea {
+    flex-grow: 1;
+    flex-shrink: 1;
+    resize: none;
+    border: none;
+    background: none;
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-family: "Segoe UI", sans-serif;
+}
+
+textarea:focus {
+    outline:none;
+}
+
+
+input {
+    height: 100%;
+    width: 100%;
+    align-content: left;
+}
+
+.submit {
+    display: flex;
+    justify-content: right;
+}
+
+.submit p {
+    margin-right: 10px;
+}
+
+.submit button {
+    border-radius: 50px;
+    width: 100px;
+    background-color: rgb(29, 155, 240);
+    color: white;
+    font-size: 15px;
+    border: none;
+}
+
+.submit button:hover{
+    background-color: rgb(152, 152, 152);
+}
+
+.tweetHector {
+    height: 150px;
+}
+
+
+.tweetHectorTop{
+    display: flex;
+    height: 100%;
+}
+
+.tweetHectorTop h1{
+   display:inline;
+   font-size: 20px;
+}
+
+.tweetHectorText {
+    width: 100%;
+    margin-left: 10px;
+}
+
+.tweetHectorText p{
+    margin-top: 5px;
+}
+
+.tweetHectorBottom {
+    display:flex;
+    margin-top: 40px;
+}
+
+.icon {
+    display:flex;
+    padding-left: 100px;
+    align-items: center;
+}
+
+.icon img {
+    height: 20px;
+    margin-right: 5px;
+}
+
+.icon p {
+    opacity: 40%;
+    font-family: "Segoe UI", sans-serif;
+    padding-bottom: 5px;
+}
