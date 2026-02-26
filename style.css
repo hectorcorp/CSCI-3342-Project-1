@@ -21,15 +21,86 @@ body{
     font-size: 40px;
 }
 
+/*Body for mobile view */
 .tweetbody {
     background-color: white;
-    width: 600px;
+    width: 80%;
     height: 450px;
     margin: auto;
     margin-top: 30px;
     border-radius: 10px;
     padding: 10px;
 }
+
+.icon {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.tweetHectorText div{
+    display: flex; 
+    flex-direction:column;
+}
+
+.profileName{
+    margin-bottom: 0;
+    margin-top: 0px;
+    margin-right: 10px;
+}
+
+.username{
+    align-self: left;
+}
+
+/*Body for Tablet view */
+@media screen and (min-width: 768px){
+.tweetbody {
+    background-color: white;
+    width: 70%;
+    height: 450px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.tweetHectorText div{
+    display: flex; 
+    flex-direction: row;
+}
+
+.username{
+    align-self: center;
+}
+}
+
+/*Body for Desktop view */
+@media screen and (min-width: 1080px){
+.tweetbody {
+    background-color: white;
+    width: 40%;
+    height: 450px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.tweetHectorText div{
+    display: flex; 
+    flex-direction: row;
+}
+
+.username{
+    align-self: center;
+}
+}
+
+
+
+
 
 .tweetbody hr {
     border-width: 2px;
@@ -78,6 +149,7 @@ input {
 .submit {
     display: flex;
     justify-content: right;
+    align-items: center;
 }
 
 .submit p {
@@ -87,6 +159,7 @@ input {
 .submit button {
     border-radius: 50px;
     width: 100px;
+    height: 40px;
     background-color: rgb(29, 155, 240);
     color: white;
     font-size: 15px;
@@ -95,6 +168,7 @@ input {
 
 .submit button:hover{
     background-color: rgb(152, 152, 152);
+    background-color: var(--accept, rgb(152, 152, 152));
 }
 
 .tweetHector {
@@ -123,13 +197,8 @@ input {
 
 .tweetHectorBottom {
     display:flex;
-    margin-top: 40px;
-}
-
-.icon {
-    display:flex;
-    padding-left: 100px;
-    align-items: center;
+    margin-top: 25px;
+    justify-content: space-around;
 }
 
 .icon img {

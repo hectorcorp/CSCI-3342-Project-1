@@ -6,6 +6,7 @@
     <title>Tweeter</title>
     <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=upload" />
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="nav">
@@ -17,12 +18,12 @@
             <div class="profilePic">
                 <img src="/images/userProfile.png">
             </div>
-            <textarea placeholder="What's happening?"></textarea>
+            <textarea id="inputBox" oninput="updateCount()" placeholder="What's happening?"></textarea>
         </div>
 
         <div class="submit">
-            <p>160 char remaining</p>
-            <button>Tweet</button>
+            <p id="counter">160 char remaining</p>
+            <button type="button" disabled id="inputButton" onclick="buttonClicked()">Tweet</button>
         </div>
     
         <hr>
@@ -32,7 +33,7 @@
                 <div class="profilePic"><img src="/images/userProfile.png"></div>
                 <div class="tweetHectorText">
                     <div>
-                        <h1>Hector Corpus</h1>
+                        <h1 class="profileName">Hector Corpus</h1>
                         <span class="username">@hector_utrgv - 5hr</span>    
                     </div>
                     <p>Hey, CSCI 3342 is cool.</p>
