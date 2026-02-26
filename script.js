@@ -5,13 +5,13 @@ function updateCount(){
     let update = `${160 - charlen} char remaining`;
     const counter = document.getElementById("counter");
     const inputButton = document.getElementById("inputButton");
-    if(charlen == 0)
+    if(charlen === 0)
     {
         inputButton.disabled = true;
         inputButton.style.setProperty('--accept','rgb(152, 152, 152)');
 
     }
-    if(charlen > 160)
+    else if(charlen > 160)
     {
         counter.innerHTML = "Text Length Exceeded"
         counter.style.color = "red";
